@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1000">
+    <title>step</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="step.css">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="./awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./awesome/css/all.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="open">
+            <div class="layer"></div>
+            <div class="layer"></div>
+        </div>
+
+        <header class="header">
+            <h2 class="logo">Ackom<span>.</span></h2>
+
+            <nav class="navigation">
+                <a href="#home" class="active">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#project">project</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="mode">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+
+           
+        </header>
+
+        <section class="home section" id="home">
+            <div class="home-content">
+                <h3><span>change</span></h3>
+                <h1>your world</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quae quos dignissimos. Nemo atque
+                    cupiditate velit assumenda reiciendis modi nulla iure distinctio, recusandae.
+                </p>
+
+                <a href="#" class="btn">Get In Touch</a>
+
+            </div>
+            <div class="pic">
+                <img src="./images/IMG_20220625_015044_962.jpg" alt="" class="now">
+            </div>
+            
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-pic">
+                <img src="./images/IMG_20220625_015050_462.jpg" alt="" class="slides">
+
+                <div class="dots">
+                    <span class="dot active" onclick="changePic('./images/IMG_20220625_015044_962.jpg')"></span>
+                    <span class="dot" onclick="changePic('./images/IMG_20220625_015034_360.jpg')"></span>
+                    <span class="dot" onclick="changePic('./images/IMG_20220625_015050_462.jpg')"></span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h1 class="heading">about <span>Me</span></h1>
+                <h3>A dedicated front-end developer </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero tempore aspernatur
+                    dignissimos incidunt repellat commodi, at reprehenderit delectus numquam voluptas? Rem magnam
+                    eveniet
+                </p>
+                <a href="#" class="btn">Resume</a>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <h1 class="heading">Our <span>Services</span></h1>
+            <div class="services-container">
+                <div class="services-box">
+                    <img src="./images/IMG_20220625_015034_360.jpg" alt="">
+                    <div class="serve-content">
+                        <a href=""><i class="fa-solid fa-code"></i></a>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi quis aperiam quos in, adipisci possimus sit ipsum. Eum rem tempore asperiores?</p>
+            
+                    </div>
+                </div>
+                <div class="services-box">
+                    <img src="./images/IMG_20220625_015044_962.jpg" alt="">
+                    <div class="serve-content">
+                        <a href=""><i class="fa-solid fa-code"></i></a>
+                        <h3>Game Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi quis aperiam quos in, adipisci possimus sit ipsum. Eum rem tempore asperiores?</p>
+                       
+                    </div>
+                </div>
+                <div class="services-box">
+                    <img src="./images/IMG_20220625_015044_962.jpg" alt="">
+                    <div class="serve-content">
+                        <a href=""><i class="fa-solid fa-code"></i></a>
+                        <h3>App Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi quis aperiam quos in, adipisci possimus sit ipsum. Eum rem tempore asperiores?</p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="project section" id="project">
+            <h1 class="heading">Latest <span>Project</span></h1>
+           
+            <div class="project-container">
+                <div class="project-box">
+                    <div class="image">
+                        <img src="./images/Living Room.jpg" alt="">
+                    </div>
+
+                    <div class="project-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi repellat aspernatur reiciendis distinctio laudantium iusto suscipit voluptatibus necessitatibus nisi temporibus libero explicabo, labore eum natus. Dicta amet accusamus molestias.</p>
+                        
+                        <div class="links">
+                            <a href="#">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="#">Live Demo<i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-box">
+                    <div class="project-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi repellat aspernatur reiciendis distinctio laudantium iusto suscipit voluptatibus necessitatibus nisi temporibus libero explicabo, labore eum natus. Dicta amet accusamus molestias.</p>
+                        
+                        <div class="links">
+                            <a href="#">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="#">Live Demo<i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="./images/Luxury Home.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <div class="image">
+                        <img src="./images/Minimalist Loft.jpg" alt="">
+                    </div>
+
+                    <div class="project-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi repellat aspernatur reiciendis distinctio laudantium iusto suscipit voluptatibus necessitatibus nisi temporibus libero explicabo, labore eum natus. Dicta amet accusamus molestias.</p>
+                        
+                        <div class="links">
+                            <a href="#">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="#">Live Demo<i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+        <section class="contact section" id="contact">
+
+            <h1 class="heading">Contact <span>Me</span></h1>
+
+            <div class="row">
+                <div class="two">
+                    <p>I'm a Web Developer - creating bold and brave interface design for companies all across the world
+                    </p>
+
+                    <br>
+
+                    <div class="hitme">
+                        <div class="one">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:(+233)241920957">(+233)241 920 957</a>                                                       
+                        </div>
+
+                        <div class="one">  
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:gideonmensah750@gmail.com">xyz@gmail.com</a>                                                      
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
+                <form class="form">
+                    <input type="name" name="name" id="name" class="form-group" placeholder="Username"
+                        autocomplete="off">
+
+                    <input type="email" name="email" id="email" class="form-group" placeholder="Email"
+                        autocomplete="off">
+
+                    <textarea name="text" id="text" cols="20" rows="10" placeholder="Enter Message"></textarea>
+
+                    <input type="submit" class="btn" id="" value="submit">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Ackom Jnr | All Rights Reserved</p>
+            </div>
+            <div class="footer-iconTop">
+                    <a href="#home"><i class="fa-solid fa-arrow-up" ></i></a>
+                </div>           
+        </footer>
+    </div>
+
+    <script src="step.js"></script>
+</body>
+
+</html>
